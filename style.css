@@ -1408,6 +1408,12 @@ footer {
     .description p {
         margin: 15px 0px 15px 0px;
     }
+    .social-networks-container {
+        width: 90px;
+    }
+    .network {
+        margin-left: 5px;
+    }
 }
 
 @media (max-width: 426px) {
