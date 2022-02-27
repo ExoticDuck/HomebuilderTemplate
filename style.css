@@ -11,13 +11,19 @@
 }
 
 html {
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 }
 
 header {
     height: 180px;
     width: 100%;
-    
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .logo-container {
@@ -337,7 +343,7 @@ header {
 .toggler-box {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .toggler-box button {
@@ -456,14 +462,11 @@ header {
 }
 
 .left-achievment-1 {
-
-
     height: 50px;
     width: 285px;
 }
 
 .left-achievment-2 {
-
     height: 50px;
     width: 285px;
 }
@@ -484,11 +487,11 @@ header {
     width: fit-content;
     float: left;
     font-family: 'Rubik', sans-serif;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 700;
     color: #323233;
     height: 50px;
-
+    padding-left: 10px;
 }
 
 .achievment-name {
@@ -933,6 +936,7 @@ footer {
 .form-box {
     float: right;
     width: 25%;
+    max-width: 300px;
     height: 100%;
     background-color: #333333;
 }
@@ -1041,9 +1045,6 @@ footer {
 }
 
 @media (max-width: 1350px) {
-    .nav-container{
-        /* background-color: #fdbe34; */
-    }
     .menu {
         margin-left: 80px;
     }
@@ -1051,10 +1052,52 @@ footer {
         margin-left: 80px;
     }
 }
-@media (max-width: 1050px) {
-    .nav-container{
-        /* background-color: #fdbe34; */
+@media (max-width: 1100px) {
+    .advantages-container {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
     }
+    .description-container {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        padding: 20px 20px 20px 20px;
+    }
+    .description-picture {
+        position: absolute;
+        z-index: -1;
+        filter: blur(10px);
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .description {
+        padding: 20px 10px 10px 10px;
+        width: 100%;
+    }
+    .description p {
+        position: relative;
+        color: #fff;
+    }
+    .description h4 {
+        position: relative;
+
+    }
+    .clients-container {
+        height: 1200px;
+    }
+    .client-card {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 1050px) {
     .menu {
         margin-left: 5%;
     }
@@ -1068,7 +1111,21 @@ footer {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 960px) {
+    .subscribe-box {
+        width: 70%;
+    }
+    .subscribe-input {
+        width: 400px;
+        margin: 0 auto;
+    }
+    .subscribe-input input {
+        display: inline-block;
+    }
+    .subscribe-input button {
+        display: inline-block;
+
+    }
     .yellow-banner {
         font-size: 15px;
     }
@@ -1093,7 +1150,7 @@ footer {
     }
     .advantages-container {
         flex-wrap: wrap;
-        height: 756px;
+        height: 900px;
         width: 100%;
         justify-content: center;
     }
@@ -1216,4 +1273,156 @@ footer {
     .play-button {
         display: none;
     }
+    .benefits-container {
+        height: 800px;
+    }
+    
 }
+
+@media (max-width: 560px) {
+    footer {
+        height: 780px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .subscribebar {
+        width: 100%;
+    }
+    .subscribe-box {
+        margin-top: 20px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .subscribe-input {
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .subscribe-input input {
+        display: inline-block;
+        width: 55%;
+    }
+    .subscribe-input button {
+        display: inline-block;
+        width: 26%;
+    }
+    .subscribe-letter {
+        text-align: center;
+        width: 100%;
+        font-size: 14px;
+        padding: 10px 0px 0px 20px;
+        margin: 0 auto;
+    }
+    .aboutUs-container {
+        width: 100%;
+        display: block;
+        height: 340px;
+    }
+    .form-box {
+        padding: 15px 30px 0 30px;
+        max-width: 100%;
+        width: 100%;
+        height: 440px;
+    }
+    .blog-card {
+        width: 320px;
+        height: 380px;
+    }
+    .blog-image {
+        width: 300px;
+        height: 220px;
+    }
+    .blog-image img {
+        width: 300px;
+        height: 220px;
+        border-radius: 5px;
+    }
+    .client-card {
+        width: 310px;
+        height: 250px;
+    }
+    .avatar-1 {
+        width: 50px;
+        height: 50px;
+    }
+    .avatar-2 {
+        width: 50px;
+        height: 50px;
+    }
+    .avatar-3 {
+        width: 50px;
+        height: 50px;
+    }
+    #deleted {
+        display: none;
+    }
+    .advantage-card-first {
+        width: 320px;
+    }
+    .advantage-card-second {
+        width: 320px;
+    }
+    .advantage-card-third {
+        width: 320px;
+    }
+    .advantage-icon-box {
+        padding: 90px 0px 90px 10px;
+    }
+    .advantage-text-box {
+        padding-left: 10px;
+    }
+    .description-text-1 {
+        font-size: 14px;
+    }
+    .description-text-2 {
+        font-size: 14px;
+    }
+    .description-text-3 {
+        font-size: 14px;
+    }
+    .achievments-container {
+        height: 270px;
+    }
+    .left-achievment-1{
+        height: 135px;
+    }
+    .left-achievment-2 {
+        height: 135px;
+    }
+    .right-achievment-1 {
+        height: 135px;
+    }
+    .right-achievment-2 {
+        height: 135px;
+    }
+}
+@media (max-width: 479px) {
+    .benefits-container {
+        height: 1600px;
+    }
+    .description h2 {
+        position: relative;
+        margin-bottom: 10px;
+    }
+    .description p {
+        margin: 15px 0px 15px 0px;
+    }
+}
+
+@media (max-width: 426px) {
+    .logo-container {
+        justify-content: center;
+    }
+    .description-text-1, .description-text-2, .description-text-3 {
+        font-size: 12px;
+    }
+    .subscribe-input input {
+        width: 70%;
+    }
+    .subscribe-input button {
+        width: 30%;
+    }
+}
+
+
