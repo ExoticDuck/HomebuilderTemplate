@@ -1178,6 +1178,9 @@ footer {
         position: relative;
 
     }
+    .number {
+        margin-right: 30px;
+    }
     .right-achievment-1 .achievment-name{
         font-size: 16px;
     }
@@ -1356,6 +1359,9 @@ footer {
     }
     #deleted {
         display: none;
+    }
+    #toggler-button-3, #toggler-button-2, #toggler-button-1 {
+        color: black;
     }
     .advantage-card-first {
         width: 320px;
